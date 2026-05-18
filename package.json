@@ -1,0 +1,19 @@
+{
+  "name": "expense-splitter",
+  "version": "1.0.0",
+  "description": "MERN stack expense splitter for friends",
+  "main": "server/src/server.js",
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm run dev",
+    "install-all": "npm install && cd server && npm install && cd ../client && npm install",
+    "build": "cd client && npm run build"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  },
+  "keywords": ["expense", "splitter", "mern", "friends"],
+  "author": "",
+  "license": "MIT"
+}
